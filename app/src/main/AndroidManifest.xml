@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.otter.otterbenchmark" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +18,14 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".network.NetworkTest"
+            android:label="@string/title_activity_network_test" >
+            <intent-filter>
+                <action android:name="com.otter.otterbenchmark.TEST_CODE" />
             </intent-filter>
         </activity>
 
