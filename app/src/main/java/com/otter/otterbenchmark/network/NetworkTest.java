@@ -161,7 +161,7 @@ public class NetworkTest extends AppCompatActivity implements View.OnClickListen
                     periodElapsed = System.currentTimeMillis() - periodStart;
                     if (periodElapsed > UPDATE_FREQUENCY) {
                         mElapsedTime = System.currentTimeMillis() - start;
-                        mDownloadSpeed = periodByteCount * 1000 / periodElapsed;
+                        mDownloadSpeed = periodByteCount * 1000L / periodElapsed;
                         sendMainHandlerMsg(MSG_PERIOD_UPDATE);
 
                         // Reset period parameters
@@ -173,7 +173,7 @@ public class NetworkTest extends AppCompatActivity implements View.OnClickListen
                 if (mRunning) {
                     // Download finish
                     mElapsedTime = System.currentTimeMillis() - start;
-                    mDownloadSpeed = mFileSize * 1000 / mElapsedTime;
+                    mDownloadSpeed = mFileSize * 1000L / mElapsedTime;
                     sendMainHandlerMsg(MSG_TEST_FINISH);
                 } else {
                     // Download cancel
