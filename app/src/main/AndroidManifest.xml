@@ -4,6 +4,7 @@
     package="com.otter.otterbenchmark" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,6 +25,14 @@
         <activity
             android:name=".network.NetworkTest"
             android:label="@string/title_activity_network_test" >
+            <intent-filter>
+                <action android:name="com.otter.otterbenchmark.TEST_CODE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".storage.StorageTest"
+            android:label="@string/title_activity_storage_test" >
             <intent-filter>
                 <action android:name="com.otter.otterbenchmark.TEST_CODE" />
             </intent-filter>

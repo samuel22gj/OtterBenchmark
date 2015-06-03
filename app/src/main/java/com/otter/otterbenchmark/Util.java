@@ -7,7 +7,7 @@ import java.util.TimeZone;
 
 public class Util {
 
-    /** Return the readable size string */
+    /** Return the readable size string. */
     public static String getSizeString(long bytes) {
         if (bytes < 0) {
             return "Wrong size";
@@ -30,7 +30,7 @@ public class Util {
         }
     }
 
-    /** Return the readable time string */
+    /** Return the readable time string. */
     public static String getTimeString(long milliseconds) {
         if (milliseconds < 0) {
             return "Wrong time";
