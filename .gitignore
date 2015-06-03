@@ -1,0 +1,41 @@
+# Eclipse
+.project
+.classpath
+.settings
+.checkstyle
+.externalToolBuilders/
+proguard/
+
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+classes/
+gen-external-apklibs/
+
+# Gradle
+.gradle/
+build/
+import-summary.txt
+
+# Maven
+target/
+release.properties
+pom.xml.*
+
+# Ant
+bin/
+gen/
+build.xml
+ant.properties
+local.properties
+proguard.cfg
+proguard-project.txt
+
+# Mac OS X
+.DS_Store
+
+# Log Files
+*.log
