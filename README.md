@@ -1,4 +1,5 @@
-# Project Name
+# Otter Benchmark
+An android device benchmark application.
 
 ## License
 
