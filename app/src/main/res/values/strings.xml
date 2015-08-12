@@ -4,6 +4,27 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <!--Activity Name -->
     <string name="title_activity_network_test">NetworkTest</string>
     <string name="title_activity_storage_test">StorageTest</string>
+
+    <!-- Common -->
+    <string name="test_start">TEST START</string>
+    <string name="test_cancel">TEST CANCEL</string>
+
+    <!-- Network -->
+    <string name="network_url">URL:</string>
+    <string name="network_connection_time">Connection Time:</string>
+    <string name="network_file_size">File Size:</string>
+    <string name="network_elapsed_time">Elapsed Time:</string>
+    <string name="network_download_speed">Download Speed:</string>
+    <string name="network_status">Status:</string>
+
+    <!-- Storage -->
+    <string name="storage_path">Path:</string>
+    <string name="storage_file_size">File Size:</string>
+    <string name="storage_elapsed_time">Elapsed Time:</string>
+    <string name="storage_download_speed">Download Speed:</string>
+    <string name="storage_status">"Status:</string>
+    <string name="storage_"></string>
 </resources>

@@ -20,7 +20,7 @@
 
         <TextView
             android:layout_gravity="end"
-            android:text="Path:" />
+            android:text="@string/storage_path" />
 
         <Spinner
             android:id="@+id/path_spinner"
@@ -28,7 +28,7 @@
 
         <TextView
             android:layout_gravity="end"
-            android:text="File Size:" />
+            android:text="@string/storage_file_size" />
 
         <TextView
             android:id="@+id/file_size"
@@ -36,7 +36,7 @@
 
         <TextView
             android:layout_gravity="end"
-            android:text="Elapsed Time:" />
+            android:text="@string/storage_elapsed_time" />
 
         <TextView
             android:id="@+id/elapsed_time"
@@ -44,7 +44,7 @@
 
         <TextView
             android:layout_gravity="end"
-            android:text="Download Speed:" />
+            android:text="@string/storage_download_speed" />
 
         <TextView
             android:id="@+id/download_speed"
@@ -52,12 +52,11 @@
 
         <TextView
             android:layout_gravity="end"
-            android:text="Status:" />
+            android:text="@string/storage_status" />
 
         <TextView
             android:id="@+id/status"
             android:layout_gravity="fill_horizontal" />
-
     </GridLayout>
 
     <Button
@@ -65,13 +64,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="TEST START" />
+        android:text="@string/test_start" />
 
     <Button
         android:id="@+id/test_cancel"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="TEST CANCEL" />
-
+        android:text="@string/test_cancel" />
 </LinearLayout>
