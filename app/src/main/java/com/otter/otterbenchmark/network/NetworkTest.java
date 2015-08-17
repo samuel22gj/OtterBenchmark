@@ -209,7 +209,7 @@ public class NetworkTest extends AppCompatActivity implements View.OnClickListen
             case MSG_TEST_FINISH:
                 status.setText("Test finished.");
                 test_start.setEnabled(true);
-                elapsed_time.setText(Util.getTimeString(mElapsedTime));
+                elapsed_time.setText(Util.convertMillisecondToTime(mElapsedTime));
                 download_speed.setText(Util.getSizeString(mDownloadSpeed) + "/s");
                 break;
             case MSG_TEST_FAIL:
@@ -222,7 +222,7 @@ public class NetworkTest extends AppCompatActivity implements View.OnClickListen
                 break;
             case MSG_CONNECT_SUCCESS:
                 status.setText("Connect successfully.");
-                connection_time.setText(Util.getTimeString(mConnectionTime));
+                connection_time.setText(Util.convertMillisecondToTime(mConnectionTime));
                 file_size.setText(Util.getSizeString(mFileSize));
                 break;
             case MSG_CONNECT_FAIL:
@@ -233,7 +233,7 @@ public class NetworkTest extends AppCompatActivity implements View.OnClickListen
                 status.setText("Downloading...");
                 break;
             case MSG_PERIOD_UPDATE:
-                elapsed_time.setText(Util.getTimeString(mElapsedTime));
+                elapsed_time.setText(Util.convertMillisecondToTime(mElapsedTime));
                 download_speed.setText(Util.getSizeString(mDownloadSpeed) + "/s");
             default:
                 break;

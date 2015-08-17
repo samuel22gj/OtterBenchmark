@@ -31,13 +31,24 @@ public class Util {
     }
 
     /** Return the readable time string. */
-    public static String getTimeString(long milliseconds) {
+    public static String convertMillisecondToTime(long milliseconds) {
         if (milliseconds < 0) {
             return "Wrong time";
         }
 
-        SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss.SSS", Locale.US);
+        SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss.SSS", Locale.getDefault());
         format.setTimeZone(TimeZone.getTimeZone("GMT")); // Remove time zone
+        return format.format(new Date(milliseconds));
+    }
+
+    /** Return the readable date & time string. */
+    public static String convertMillisecondToDateTime(long milliseconds) {
+        if (milliseconds < 0) {
+            return "Wrong time";
+        }
+
+        SimpleDateFormat format = new SimpleDateFormat(
+                "yyyy-MM-dd HH:mm:ss Z", Locale.getDefault());
         return format.format(new Date(milliseconds));
     }
 }

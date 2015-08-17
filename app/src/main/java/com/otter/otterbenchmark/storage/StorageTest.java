@@ -225,7 +225,7 @@ public class StorageTest extends AppCompatActivity implements View.OnClickListen
             case MSG_TEST_FINISH:
                 status.setText("Test finished.");
                 test_start.setEnabled(true);
-                elapsed_time.setText(Util.getTimeString(mElapsedTime));
+                elapsed_time.setText(Util.convertMillisecondToTime(mElapsedTime));
                 download_speed.setText(Util.getSizeString(mDownloadSpeed) + "/s");
                 break;
             case MSG_TEST_FAIL:
@@ -252,7 +252,7 @@ public class StorageTest extends AppCompatActivity implements View.OnClickListen
                 file_size.setText(Util.getSizeString(mFileSize));
                 break;
             case MSG_PERIOD_UPDATE:
-                elapsed_time.setText(Util.getTimeString(mElapsedTime));
+                elapsed_time.setText(Util.convertMillisecondToTime(mElapsedTime));
                 download_speed.setText(Util.getSizeString(mDownloadSpeed) + "/s");
             default:
                 break;
