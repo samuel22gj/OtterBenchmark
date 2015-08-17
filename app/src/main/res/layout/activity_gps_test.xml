@@ -1,0 +1,175 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.otter.otterbenchmark.gps.GpsTest">
+
+    <Button
+        android:id="@+id/location_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gps_location_settings"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="false"
+            android:columnCount="2">
+
+            <!-- Provider -->
+            <TextView
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/gps_gps_status" />
+
+            <TextView
+                android:id="@+id/gps_status"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_network_status" />
+
+            <TextView
+                android:id="@+id/network_status"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_passive_status" />
+
+            <TextView
+                android:id="@+id/passive_status"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_columnSpan="2"/>
+
+            <!-- Location -->
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_provider" />
+
+            <TextView
+                android:id="@+id/provider"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_accuracy" />
+
+            <TextView
+                android:id="@+id/accuracy"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_longitude" />
+
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_latitude" />
+
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_bearing" />
+
+            <TextView
+                android:id="@+id/bearing"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_altitude" />
+
+            <TextView
+                android:id="@+id/altitude"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_speed" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_time" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_columnSpan="2"/>
+
+            <!-- GpsStatus -->
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_max_satellites" />
+
+            <TextView
+                android:id="@+id/max_satellites"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_satellites" />
+
+            <TextView
+                android:id="@+id/satellites"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_first_fix_time" />
+
+            <TextView
+                android:id="@+id/first_fix_time"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_columnSpan="2"/>
+
+            <!-- NMEA -->
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_time_stamp" />
+
+            <TextView
+                android:id="@+id/time_stamp"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/gps_nmea" />
+
+            <TextView
+                android:id="@+id/nmea"
+                android:layout_gravity="fill_horizontal" />
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

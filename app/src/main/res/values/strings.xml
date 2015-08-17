@@ -7,10 +7,15 @@
     <!--Activity Name -->
     <string name="title_activity_network_test">NetworkTest</string>
     <string name="title_activity_storage_test">StorageTest</string>
+    <string name="title_activity_gps_test">GPSTest</string>
 
     <!-- Common -->
     <string name="test_start">TEST START</string>
     <string name="test_cancel">TEST CANCEL</string>
+    <string name="error">Error</string>
+    <string name="close">Close</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
 
     <!-- Network -->
     <string name="network_url">URL:</string>
@@ -26,5 +31,25 @@
     <string name="storage_elapsed_time">Elapsed Time:</string>
     <string name="storage_download_speed">Download Speed:</string>
     <string name="storage_status">"Status:</string>
-    <string name="storage_"></string>
+    
+    <!-- GPS -->
+    <string name="gps_location_settings">Location Settings</string>
+    <string name="gps_not_support_location_service">Not support location service.</string>
+    <string name="gps_gps_status">GPS Status:</string>
+    <string name="gps_network_status">Network Status:</string>
+    <string name="gps_passive_status">Passive Status:</string>
+    <string name="gps_provider">Provider:</string>
+    <string name="gps_accuracy">Accuracy:</string>
+    <string name="gps_longitude">Longitude:</string>
+    <string name="gps_latitude">Latitude:</string>
+    <string name="gps_bearing">Bearing:</string>
+    <string name="gps_altitude">Altitude:</string>
+    <string name="gps_speed">Speed:</string>
+    <string name="gps_time">Time:</string>
+    <string name="gps_max_satellites">Max Satellites:</string>
+    <string name="gps_satellites">Satellites:</string>
+    <string name="gps_first_fix_time">First Fix Time:</string>
+    <string name="gps_time_stamp">Time Stamp:</string>
+    <string name="gps_nmea">NMEA:</string>
+
 </resources>
