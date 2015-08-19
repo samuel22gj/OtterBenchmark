@@ -118,12 +118,16 @@ public class GpsTest extends AppCompatActivity
 
     private void registerGpsListeners() {
         // Register the listener with the Location Manager to receive location updates.
-        Log.i(TAG, "Register GPS Location Provider");
-        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
-                MIN_UPDATE_INTERVAL, MIN_UPDATE_DISTANCE, this);
-        Log.i(TAG, "Register Network Location Provider");
-        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
-                MIN_UPDATE_INTERVAL, MIN_UPDATE_DISTANCE, this);
+        if (mLocationManager.getAllProviders().contains(LocationManager.GPS_PROVIDER)) {
+            Log.i(TAG, "Register GPS Location Provider");
+            mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+                    MIN_UPDATE_INTERVAL, MIN_UPDATE_DISTANCE, this);
+        }
+        if (mLocationManager.getAllProviders().contains(LocationManager.NETWORK_PROVIDER)) {
+            Log.i(TAG, "Register Network Location Provider");
+            mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
+                    MIN_UPDATE_INTERVAL, MIN_UPDATE_DISTANCE, this);
+        }
 
         // Register the listener to receiving notifications when GPS status has changed.
         Log.i(TAG, "Register GpsStatusListener: " + mLocationManager.addGpsStatusListener(this));
