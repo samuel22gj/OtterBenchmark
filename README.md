@@ -1,4 +1,9 @@
 # Otter Benchmark
+
+[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
+[![Build Status](https://travis-ci.org/samuel22gj/OtterBenchmark.svg?branch=master)](https://travis-ci.org/samuel22gj/OtterBenchmark)
+[![wercker status](https://app.wercker.com/status/512aaa0f7c738b89c05fd8046566b931/s/master "wercker status")](https://app.wercker.com/project/bykey/512aaa0f7c738b89c05fd8046566b931)
+
 An android device benchmark application.
 
 ## License
