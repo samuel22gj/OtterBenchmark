@@ -19,13 +19,17 @@ android:
     - android-23
     - extra-android-support
     - extra-android-m2repository
-    - sys-img-armeabi-v7a-android-23
+    #- sys-img-armeabi-v7a-android-23
 
 before_script:
   # Make gradlew have permission to execute
   - chmod +x gradlew
   # Create, start and wait device
-  - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
-  - emulator -avd test -no-skin -no-audio -no-window &
-  - android-wait-for-emulator
-  - adb shell input keyevent 82 &
+  #- echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
+  #- emulator -avd test -no-skin -no-audio -no-window &
+  #- android-wait-for-emulator
+  #- adb shell input keyevent 82 &
+
+script:
+  # Default is "./gradlew build connectedCheck"
+  - ./gradlew --full-stacktrace build
