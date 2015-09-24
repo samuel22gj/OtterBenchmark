@@ -6,6 +6,14 @@
 
 An android device benchmark application.
 
+## Test List
+
+| Item | Description |
+|------|-------------|
+| GPS | Monitor GPS relative information. |
+| Network | Analyze network bandwidth. |
+| Storage | Analyze storage speed. |
+
 ## License
 
     Copyright 2015 Samuel Huang
