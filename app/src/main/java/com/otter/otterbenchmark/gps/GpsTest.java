@@ -21,6 +21,9 @@ import com.otter.otterbenchmark.ErrorDialog;
 import com.otter.otterbenchmark.R;
 import com.otter.otterbenchmark.Util;
 
+/**
+ * Monitor GPS relative information.
+ */
 public class GpsTest extends AppCompatActivity
         implements LocationListener, GpsStatus.Listener, GpsStatus.NmeaListener {
     private static final String TAG = GpsTest.class.getSimpleName();
