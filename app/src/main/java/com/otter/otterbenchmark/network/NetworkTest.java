@@ -21,7 +21,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * Analyze network speed.
+ * Analyze network bandwidth.
  *
  * Read file from network and record spent time. Afterwards, calculate the speed.
  */
