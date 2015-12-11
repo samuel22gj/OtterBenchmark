@@ -85,12 +85,6 @@ public class OtterBenchmark extends AppCompatActivity {
         CharSequence labelSeq = info.loadLabel(mPackageManager);
         String lable = labelSeq != null ? labelSeq.toString() : info.activityInfo.name;
 
-        // Remove the suffix "Test".
-        int index = lable.lastIndexOf("Test");
-        if (index > 0) {
-            lable = lable.substring(0, index);
-        }
-
         return lable;
     }
 
