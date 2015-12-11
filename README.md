@@ -10,9 +10,10 @@ An android device benchmark application.
 
 | Item | Description |
 |------|-------------|
-| GPS | Monitor GPS relative information. |
-| Network | Analyze network bandwidth. |
-| Storage | Analyze storage speed. |
+| GPS Monitor| Monitor GPS relative information. |
+| Network Test| Analyze network bandwidth. |
+| Storage Test| Analyze storage speed. |
+| System Info| Display system information (e.g., SDK, device, build). |
 
 ## License
 
