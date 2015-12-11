@@ -10,10 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.otter.otterbenchmark.R;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
+import com.otter.otterbenchmark.Util;
 
 /**
  * Display system information (e.g., SDK, device, build).
@@ -79,7 +76,7 @@ public class SystemInfo extends AppCompatActivity implements View.OnClickListene
         product.setText(Build.PRODUCT);
         model.setText(Build.MODEL);
         id.setText(Build.ID);
-        time.setText(getDateTime(Build.TIME));
+        time.setText(Util.convertMillisecondToDateTime(Build.TIME));
         type.setText(Build.TYPE);
         tags.setText(Build.TAGS);
         display.setText(Build.DISPLAY);
@@ -156,11 +153,5 @@ public class SystemInfo extends AppCompatActivity implements View.OnClickListene
 
     private int getOrientation () {
         return getResources().getConfiguration().orientation;
-    }
-
-    public String getDateTime(long milliseconds) {
-        SimpleDateFormat sdf = new SimpleDateFormat(
-                "yyyy-MM-dd HH:mmZ", Locale.getDefault());
-        return sdf.format(new Date(milliseconds));
     }
 }
