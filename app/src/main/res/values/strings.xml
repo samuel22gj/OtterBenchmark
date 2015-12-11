@@ -53,4 +53,33 @@
     <string name="gps_time_stamp">Time Stamp:</string>
     <string name="gps_nmea">NMEA:</string>
 
+    <!-- System -->
+    <string name="system_rotate_screen">Rotate Screen</string>
+    <string name="system_require_api_23">Requires API Level 23</string>
+    <string name="system_incremental">Incremental:</string>
+    <string name="system_codename">Code Name:</string>
+    <string name="system_release">Version :</string>
+    <string name="system_sdk_int">SDK Ver:</string>
+    <string name="system_preview_sdk_int">Preview SDK:</string>
+    <string name="system_base_os">Base OS:</string>
+    <string name="system_security_patch">Security Patch:</string>
+    <string name="system_user">user:</string>
+    <string name="system_manufacturer">Manufacturer:</string>
+    <string name="system_host">Host:</string>
+    <string name="system_brand">Brand:</string>
+    <string name="system_product">Product:</string>
+    <string name="system_model">Model:</string>
+    <string name="system_id">ID:</string>
+    <string name="system_time">Time:</string>
+    <string name="system_type">Build Type:</string>
+    <string name="system_tags">Build Tags:</string>
+    <string name="system_display">Build ID:</string>
+    <string name="system_fingerprint">Fingerprint:</string>
+    <string name="system_device">Device:</string>
+    <string name="system_board">Board:</string>
+    <string name="system_hardware">Hardware:</string>
+    <string name="system_serial">Serial:</string>
+    <string name="system_bootloader">Bootloader:</string>
+    <string name="system_cpu_abi">CPU/ABI:</string>
+    <string name="system_radio">Radio:</string>
 </resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/rotate_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/system_rotate_screen"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignBounds"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="false"
+            android:columnCount="2">
+
+            <!-- Build.VERSION -->
+            <TextView
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/system_incremental" />
+
+            <TextView
+                android:id="@+id/incremental"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_codename" />
+
+            <TextView
+                android:id="@+id/codename"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_release" />
+
+            <TextView
+                android:id="@+id/release"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_sdk_int" />
+
+            <TextView
+                android:id="@+id/sdk_int"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_preview_sdk_int" />
+
+            <TextView
+                android:id="@+id/preview_sdk_int"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_base_os" />
+
+            <TextView
+                android:id="@+id/base_os"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_security_patch" />
+
+            <TextView
+                android:id="@+id/security_patch"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_columnSpan="2"/>
+
+            <!-- Build -->
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_user" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_manufacturer" />
+
+            <TextView
+                android:id="@+id/manufacturer"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_host" />
+
+            <TextView
+                android:id="@+id/host"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_brand" />
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_product" />
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_model" />
+
+            <TextView
+                android:id="@+id/model"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_id" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_time" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_type" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_tags" />
+
+            <TextView
+                android:id="@+id/tags"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_display" />
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_fingerprint" />
+
+            <TextView
+                android:id="@+id/fingerprint"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_device" />
+
+            <TextView
+                android:id="@+id/device"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_board" />
+
+            <TextView
+                android:id="@+id/board"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_hardware" />
+
+            <TextView
+                android:id="@+id/hardware"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_serial" />
+
+            <TextView
+                android:id="@+id/serial"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_bootloader" />
+
+            <TextView
+                android:id="@+id/bootloader"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_cpu_abi" />
+
+            <TextView
+                android:id="@+id/cpu_abi"
+                android:layout_gravity="fill_horizontal" />
+
+            <TextView
+                android:layout_gravity="end"
+                android:text="@string/system_radio" />
+
+            <TextView
+                android:id="@+id/radio"
+                android:layout_gravity="fill_horizontal" />
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

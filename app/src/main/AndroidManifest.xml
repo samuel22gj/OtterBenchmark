@@ -45,5 +45,13 @@
                 <action android:name="com.otter.otterbenchmark.TEST_CODE" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".system.SystemInfo"
+            android:label="@string/title_activity_system_info" >
+            <intent-filter>
+                <action android:name="com.otter.otterbenchmark.TEST_CODE" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
