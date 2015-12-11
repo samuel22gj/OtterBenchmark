@@ -5,9 +5,10 @@
     <string name="action_settings">Settings</string>
 
     <!--Activity Name -->
-    <string name="title_activity_network_test">NetworkTest</string>
-    <string name="title_activity_storage_test">StorageTest</string>
-    <string name="title_activity_gps_test">GPSTest</string>
+    <string name="title_activity_network_test">Network Test</string>
+    <string name="title_activity_storage_test">Storage Test</string>
+    <string name="title_activity_gps_test">GPS Test</string>
+    <string name="title_activity_system_info">System Info</string>
 
     <!-- Common -->
     <string name="test_start">TEST START</string>
