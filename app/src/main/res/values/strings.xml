@@ -7,7 +7,7 @@
     <!--Activity Name -->
     <string name="title_activity_network_test">Network Test</string>
     <string name="title_activity_storage_test">Storage Test</string>
-    <string name="title_activity_gps_test">GPS Test</string>
+    <string name="title_activity_gps_monitor">GPS Monitor</string>
     <string name="title_activity_system_info">System Info</string>
 
     <!-- Common -->

@@ -24,9 +24,9 @@ import com.otter.otterbenchmark.Util;
 /**
  * Monitor GPS relative information.
  */
-public class GpsTest extends AppCompatActivity
+public class GpsMonitor extends AppCompatActivity
         implements LocationListener, GpsStatus.Listener, GpsStatus.NmeaListener {
-    private static final String TAG = GpsTest.class.getSimpleName();
+    private static final String TAG = GpsMonitor.class.getSimpleName();
 
     private static final long MIN_UPDATE_INTERVAL  = 0L; // milliseconds
     private static final float MIN_UPDATE_DISTANCE = 0F; // meters
@@ -56,7 +56,7 @@ public class GpsTest extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_gps_test);
+        setContentView(R.layout.activity_gps_monitor);
         findViews();
         initButtons();
 

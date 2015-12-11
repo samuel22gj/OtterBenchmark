@@ -39,8 +39,8 @@
         </activity>
 
         <activity
-            android:name=".gps.GpsTest"
-            android:label="@string/title_activity_gps_test" >
+            android:name=".gps.GpsMonitor"
+            android:label="@string/title_activity_gps_monitor" >
             <intent-filter>
                 <action android:name="com.otter.otterbenchmark.TEST_CODE" />
             </intent-filter>
